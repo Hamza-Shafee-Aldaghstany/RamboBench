@@ -4,7 +4,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 
-def generate_and_save_jsonl(
+def generate_skethces_and_save_jsonl(
     model,
     tokenizer,
     input_jsonl_path,
