@@ -7,7 +7,8 @@ from EEI_build import SketchPromptBuilder
 from RUE_build import RUEPromptBuilder
 
 repo_base_dir = 'repositories/defects4j'
-parsed_repo_base_dir = 'parsed_repositories/defects4j'
+parsed_repo_base_dir = 'parsed_repositories/parsed_project/parsed_defects4j'
+
 repo_list = 'repositories/defects4j/repo_names.txt'
 # repo_base_dir = 'repositories/rambo'
 # parsed_repo_base_dir = 'parsed_repositories/rambo'
