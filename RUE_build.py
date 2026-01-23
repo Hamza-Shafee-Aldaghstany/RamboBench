@@ -56,17 +56,18 @@ class RUEPromptBuilder:
                     score_candidate_methods = []
                     for top_k_signature in task['metadata']['top_k_context']:
                         score_candidate_methods.append({
-                            'fpath_tuple': top_k_signature['fpath_tuple'],
+                            'fpath_tuple': top_k_signature['fpath'],
                             'method': top_k_signature['method'],
                             'sim_score': top_k_signature['sim_score'],
                             'start_line_no': top_k_signature['start_line_no'],
                             'end_line_no': top_k_signature['end_line_no'],
                             'type_query': 'signature'
                         })
-                    prediction_samples = task['choices']
-                    clean_prediction = Tools.clean_output(prediction_samples[0]['text'])
-                    extracted_types = task['prediction.types']
-                    extracted_methods = task['prediction.methods']
+                    # prediction_samples = task['choices']
+                    # clean_prediction = Tools.clean_output(prediction_samples[0]['text'])
+                    clean_prediction=task['clean_sketch']
+                    extracted_types = task['sketch_types']
+                    extracted_methods = task['sketch_methods']
                     # clean_prediction = Tools.clean_output(prediction_samples)
                     # extracted_types = task['ground_truth.types']
                     # extracted_methods = task['ground_truth.methods']           
