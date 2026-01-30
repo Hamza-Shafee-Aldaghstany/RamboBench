@@ -145,6 +145,3 @@ The harness runs tests in parallel and outputs pass/fail information.  Use these
 - **Dataset format**: Training/validation JSONL files must include keys `sketch_prompt`, `sketch` and `rel` (0/1)【698361307651735†L118-L150】.  Additional fields will be ignored.
 - **Limitations**: The evaluation harness currently resides in a Jupyter notebook and has some limitations in how functions are selected from Defects4J.  These issues are being investigated.
 
-## Citation
-
-If you use this work, please cite the original RAMBO paper【251449669295767†L292-L307】 as well as this multi‑sketch extension.  Contributions and feedback are welcome!
